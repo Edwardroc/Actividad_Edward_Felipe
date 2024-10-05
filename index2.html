@@ -4,54 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Imágenes de Música</title>
+    <title>Lista de Imágenes de Música - Edward y Felipe</title>
     <style>
         body {
             background-color: black;
-            color: red;
+            color: green;
             text-align: center;
+            font-family: Arial, sans-serif;
         }
-        h1 {
-            color: red;
+        h1, h2 {
+            color: green;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .column {
+            width: 45%;
         }
         ul {
-            list-style-type: disc;
-            padding: 0;
-            display: inline-block;
-            text-align: left;
+            list-style-type: none; /* Elimina las viñetas */
+            padding-left: 0;
         }
         li {
             margin-bottom: 40px;
+            text-align: center;
         }
-        p {
+        li p {
             margin-bottom: 10px; /* Espacio entre el título y la imagen */
+        }
+        li img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <h1>Lista de Imágenes de Música</h1>
-    <ul>
-        <li>
-            <p>JS4E --- Arcangel</p>
-            <img src="../Actividad/Imagenes/JS4E.jpg" alt="Imagen 4" width="300">
-        </li>
-        <li>
-            <p>1 OF 1 --- Maluma - Bless</p>
-            <img src="../Actividad/Imagenes/1 of 1.JPG" alt="Imagen 1" width="300">
-        </li>
-        <li>
-            <p>Fantasmas --- Humbe</p>
-            <img src="../Actividad/Imagenes/Fantasmas.jpg" alt="Fantasmas" width="300">
-        </li>
-        <li>
-            <p>Hoy --- Valentino Merlo</p>
-            <img src="../Actividad/Imagenes/Hoy.jpg" alt="Hoy" width="300">
-        </li>
-        <li>
-            <p>Ojos Color Sol --- Calle 13</p>
-            <img src="../Actividad/Imagenes/Ojos color sol.jpg" alt="Ojos Color Sol" width="300">
-        </li>
-    </ul>
-    <p>Espero les guste mi lista</p>
+    
+    <div class="container">
+        <!-- Columna Edward -->
+        <div class="column">
+            <h2>Edward</h2>
+            <ul>
+                <li>
+                    <p>JS4E --- Arcangel</p>
+                    <img src="../Actividad/Imagenes/JS4E.jpg" alt="JS43" width="300">
+                </li>
+                <li>
+                    <p>1 OF 1 --- Maluma & Bless</p>
+                    <img src="../Actividad/Imagenes/1 of 1.JPG" alt="1OF1" width="300">
+                </li>
+                <li>
+                    <p>Fantasmas --- Humbe</p>
+                    <img src="../Actividad/Imagenes/Fantasmas.jpg" alt="Fantasmas" width="300">
+                </li>
+                <li>
+                    <p>Hoy --- Valentino Merlo</p>
+                    <img src="../Actividad/Imagenes/Hoy.jpg" alt="Hoy" width="300">
+                </li>
+                <li>
+                    <p>Ojos Color Sol --- Calle 13</p>
+                    <img src="../Actividad/Imagenes/Ojos color sol.jpg" alt="Ojos Color Sol" width="300">
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Columna Felipe -->
+        <div class="column">
+            <h2>Felipe</h2>
+            <ul>
+                <li>
+                    <p>Como se siente --- remix Jhayco & Bad Bunny</p>
+                    <img src="../Actividad/Imagenes/Como se siente.jpg" alt="Como" width="300">
+                </li>
+                <li>
+                    <p>Doblexxo --- J.Balvin & Feid</p>
+                    <img src="../Actividad/Imagenes/DobleXXO.jpg" alt="doble" width="300">
+                </li>
+                <li>
+                    <p>Nadie como yo --- Kevin Roldan</p>
+                    <img src="../Actividad/Imagenes/nadie como yo.jpg" alt="nadie" width="300">
+                </li>
+                <li>
+                    <p>Purrito Apa --- Feid</p>
+                    <img src="../Actividad/Imagenes/purrito.jpg" alt="purrito" width="300">
+                </li>
+                <li>
+                    <p>Perro Negro --- Bad Bunny & Feid </p>
+                    <img src="../Actividad/Imagenes/Perro negro.jpg" alt="perro" width="300">
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <p>Espero les guste nuestra lista</p>
 </body>
 </html>
